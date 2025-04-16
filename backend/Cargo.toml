@@ -1,0 +1,12 @@
+[package]
+name = "backend"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+hex = { version = "0.4", features = ["serde"] }
+reqwest = { version = "0.12", default-features = false, features = ["charset", "h2", "http2", "json", "rustls-tls"] }
+serde = "1"
+serde_json = "1"
+sha2 = "0.10.9"
+tokio = { version = "1.47", features = ["io-util", "macros", "net", "rt"] }

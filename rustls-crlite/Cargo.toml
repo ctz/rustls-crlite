@@ -1,0 +1,12 @@
+[package]
+name = "rustls-crlite"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+clubcard = "*"
+clubcard-crlite = "0.3.1"
+rustls = "0.23"
+rustls-pki-types = "1"
+rustls-webpki = {git = "https://github.com/rustls/webpki.git", branch = "jbp-sct", features = ["ring"]}
+webpki-roots = "1"
